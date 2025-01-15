@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Bienvenido al Blog</h1>
+    <p>Usuario: {{ current_user.username }}</p>
+
+    <a href="{{ url_for('create_post') }}">Crear publicación</a> |
+    <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+
+    <h2>Publicaciones</h2>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.content }}</p>
+                <p><em>Autor: {{ post.author.username }}</em></p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

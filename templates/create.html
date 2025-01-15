@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Publicación</title>
+</head>
+<body>
+    <h1>Crear nueva publicación</h1>
+    <form method="POST">
+        <label for="title">Título:</label>
+        <input type="text" name="title" id="title" required><br>
+        
+        <label for="content">Contenido:</label>
+        <textarea name="content" id="content" required></textarea><br>
+        
+        <button type="submit">Crear publicación</button>
+    </form>
+    <a href="{{ url_for('index') }}">Volver</a>
+</body>
+</html>

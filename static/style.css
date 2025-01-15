@@ -1,0 +1,70 @@
+/* static/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.posts .post {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el botón de "Crear nueva publicación" */
+.create-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;  /* Verde */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+    background-color: #45a049;  /* Verde más oscuro */
+}
+
+/* Estilo para el botón de "Eliminar" */
+.delete-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}

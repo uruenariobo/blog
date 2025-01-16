@@ -10,9 +10,9 @@ load_dotenv()
 app = Flask(__name__)
 
 # Usar las variables de entorno para la configuración
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI', 'sqlite:///blog.db')  # Si no se encuentra la variable, usa SQLite por defecto
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback_secret_key')  # Usa la variable de entorno o una clave predeterminada
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')  # Usa la variable de entorno o una clave predeterminada
 
 db = SQLAlchemy(app)
 
